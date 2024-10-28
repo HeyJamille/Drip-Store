@@ -1,21 +1,26 @@
 import React from 'react';
 
+// assets
+import collection1 from '../assets/cards/collection-1.png'
+import collection2 from '../assets/cards/collection-2.png'
+import collection3 from '../assets/cards/collection-3.png'
+
 // Exemplo de dados do produto
 const products = [
   {
     id: 1,
     promotion: "30% OFF",
-    imageUrl: "src/assets/cards/collection-1.png", // Substitua pelo caminho da sua imagem
+    imageUrl: collection1, // Substitua pelo caminho da sua imagem
   },
   {
     id: 2,
     promotion: "30% OFF",
-    imageUrl: "src/assets/cards/collection-2.png", // Substitua pelo caminho da sua imagem
+    imageUrl: collection2, // Substitua pelo caminho da sua imagem
   },
   {
     id: 3,
     promotion: "30% OFF",
-    imageUrl: "src/assets/cards/collection-3.png", // Substitua pelo caminho da sua imagem
+    imageUrl: collection3, // Substitua pelo caminho da sua imagem
   },
 ];
 
