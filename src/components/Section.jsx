@@ -13,9 +13,9 @@ const Section = () => {
   return (
     <article className="flex flex-col items-center justify-center p-5 pt-10 lg:py-20 lg:px-20 lg:flex-row lg:justify-around">
       {/* Círculo com gradiente e imagem */}
-      <section className="flex items-center justify-center mb-10 w-64 h-64 rounded-full bg-gradient-to-b from-[#4200FF40] to-white lg:w-[450px] lg:h-[450px] lg:mb-0">
+      <section className="flex items-center justify-center mb-10 w-64 h-64 rounded-full bg-gradient-to-b from-[#4200FF40] to-white md:w-[450px] md:h-[450px] md:mb-0">
         <img 
-          className="w-full h-full object-contain" 
+          className="w-full h-max-[200px] object-cover "
           src={jordan} 
           alt="Air Jordan edição de colecionador" 
         />

@@ -34,15 +34,15 @@ const Logo = () => {
     <article className="flex flex-col justify-around items-center bg-light-gray-3 p-5 relative lg:flex-row-reverse lg:px-20">
       {/* Carrossel de Imagens */}
       <section className="self-center">
-        <Slider {...settings} className="w-[250px] lg:w-[600px]">
+        <Slider {...settings} className="w-[250px] md:w-[400px] lg:w-[600px]">
           <div>
-            <img src={logo} alt="Imagem de tênis branco da Nike" className="h-[300px] lg:h-[600px] w-auto object-cover" />
+            <img src={logo} alt="Imagem de tênis branco da Nike" className="h-[300px] md:h-[400px] lg:h-[600px] w-auto object-cover" />
           </div>
           <div>
-            <img src={logo2} alt="Imagem de tênis exemplo 2" className="h-[300px] lg:h-[600px] w-auto object-cover" />
+            <img src={logo2} alt="Imagem de tênis exemplo 2" className="h-[300px] md:h-[400px] lg:h-[600px] w-auto object-cover" />
           </div>
           <div>
-            <img src={logo3} alt="Imagem de tênis exemplo 3" className="h-[300px] lg:h-[600px] w-auto object-cover" />
+            <img src={logo3} alt="Imagem de tênis exemplo 3" className="h-[300px] md:h-[400px] lg:h-[600px] w-auto object-cover" />
           </div>
         </Slider>
         

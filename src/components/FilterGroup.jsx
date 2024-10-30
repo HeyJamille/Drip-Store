@@ -76,10 +76,10 @@ const FilterGroup = () => {
               <img 
                 src={product.imageUrl} 
                 alt={product.title} 
-                className="w-full max-h-[200px] object-cover rounded-md"               
+                className="w-full object-cover rounded-md "
               />
               <p className="absolute top-2 left-2 text-sm text-dark-gray-2 w-[70px] font-semibold bg-[#E7FF86] p-1 rounded-full mb-2">
-                {product.praomotion}
+                {product.promotion}
               </p>
             </div>
             <h3 className="mt-3 text-lg font-semibold text-dark-gray">{product.title}</h3>
