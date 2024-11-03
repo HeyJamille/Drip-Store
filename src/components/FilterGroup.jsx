@@ -55,6 +55,33 @@ const FilterGroup = () => {
       priceDescont: '$200',
       price: '$100'
     },
+    {
+      id: 6,
+      promotion: "30% OFF",
+      imageUrl: product3,
+      title: 'Tênis',
+      description: 'K-Swiss V8 - Masculino',
+      priceDescont: '$200',
+      price: '$100'
+    },
+    {
+      id: 7,
+      promotion: "30% OFF",
+      imageUrl: product4,
+      title: 'Tênis',
+      description: 'K-Swiss V8 - Masculino',
+      priceDescont: '$200',
+      price: '$100'
+    },
+    {
+      id: 8,
+      promotion: "30% OFF",
+      imageUrl: product5,
+      title: 'Tênis',
+      description: 'K-Swiss V8 - Masculino',
+      priceDescont: '$200',
+      price: '$100'
+    },
   ];
 
   return (

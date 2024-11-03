@@ -7,6 +7,7 @@ import ProductCard from '../components/ProductCard';
 import ProductOptions from '../components/ProductOptions';
 import FilterGroup from '../components/FilterGroup';
 import Section from '../components/Section';
+import Footer from '../components/Footer';
 
 const HomePage = ({ children }) => {
   return (
@@ -21,9 +22,9 @@ const HomePage = ({ children }) => {
       <FilterGroup />
       <Section />
     
-      {/* Componente do rodapé 
+      {/* Componente do rodapé */ }
       <Footer />
-      */ }
+
     </div>
   );
 };

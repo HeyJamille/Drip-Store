@@ -5,7 +5,6 @@ import Slider from 'react-slick';
 import logo from '../assets/cards/White-Sneakers.svg';
 import logo2 from '../assets/cards/White-Sneakers.svg';
 import logo3 from '../assets/cards/White-Sneakers.svg';
-
 import ornament from '../assets/ornament.svg';
 import ornamentComplet from '../assets/ornamentComplet.svg';
 
@@ -21,7 +20,7 @@ const Logo = () => {
 
   // Configurações do carrossel
   const settings = {
-    dots: false, // Remover bolinhas
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -31,9 +30,11 @@ const Logo = () => {
   };
 
   return (
-    <article className="flex flex-col justify-around items-center bg-light-gray-3 p-5 relative lg:flex-row-reverse lg:px-20">
+    <article
+      className="flex flex-col justify-around items-center pt-[80px] bg-light-gray-3 lg:flex-row-reverse lg:px-20 lg:pt-0"
+    >
       {/* Carrossel de Imagens */}
-      <section className="self-center">
+      <section className="self-center ">
         <Slider {...settings} className="w-[250px] md:w-[400px] lg:w-[600px]">
           <div>
             <img src={logo} alt="Imagem de tênis branco da Nike" className="h-[300px] md:h-[400px] lg:h-[600px] w-auto object-cover" />
@@ -45,14 +46,14 @@ const Logo = () => {
             <img src={logo3} alt="Imagem de tênis exemplo 3" className="h-[300px] md:h-[400px] lg:h-[600px] w-auto object-cover" />
           </div>
         </Slider>
-        
+
         {/* Ornamentos Decorativos */}
-        <img className="absolute top-0 right-0 mt-4 lg:hidden" src={ornament} alt="Ornamento decorativo" />
-        <img className="hidden lg:block lg:absolute lg:top-0 lg:mt-10 lg:right-10" src={ornamentComplet} alt="Ornamento decorativo" />
+        <img className="absolute top-0 right-0 mt-[90px] lg:hidden" src={ornament} alt="Ornamento decorativo" />
+        <img className="hidden lg:block lg:absolute lg:top-[150px] lg:mt-10 lg:right-10" src={ornamentComplet} alt="Ornamento decorativo" />
       </section>
 
       {/* Informações e Botão */}
-      <section className="flex flex-col gap-5 text-center lg:text-start sm:w-[500px] lg:w-[400px]">
+      <section className="flex flex-col gap-5 text-center p-5 lg:text-start lg:p-0 sm:w-[500px] lg:w-[400px]">
         <div>
           <p className="text-sm font-bold text-primary mb-5 lg:text-base lg:text-warning">Melhores ofertas personalizadas</p>
           <h1 className="text-4xl font-bold text-dark-gray mb-5 lg:text-5xl">Queima de estoque Nike 🔥</h1>
@@ -67,6 +68,6 @@ const Logo = () => {
       </section>
     </article>
   );
-}
+};
 
 export default Logo;
