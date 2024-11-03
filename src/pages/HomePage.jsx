@@ -7,24 +7,22 @@ import ProductCard from '../components/ProductCard';
 import ProductOptions from '../components/ProductOptions';
 import FilterGroup from '../components/FilterGroup';
 import Section from '../components/Section';
-import Footer from '../components/Footer';
 
 const HomePage = ({ children }) => {
   return (
     <div>
-      {/* Componente do cabeçalho */}
-      <Header />
-
-      {/* Conteúdo dinâmico das páginas */}
+      {/* Exibe o logotipo */}
       <Logo />
+
+      {/* Seção de Produtos */}
       <ProductCard />
       <ProductOptions /> 
-      <FilterGroup />
-      <Section />
-    
-      {/* Componente do rodapé */ }
-      <Footer />
 
+      {/* Seção de Filtros */}
+      <FilterGroup />
+
+      {/* Seção de Produtos */}
+      <Section />
     </div>
   );
 };

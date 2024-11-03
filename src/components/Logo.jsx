@@ -3,8 +3,9 @@ import Slider from 'react-slick';
 
 // assets
 import logo from '../assets/cards/White-Sneakers.svg';
-import logo2 from '../assets/cards/White-Sneakers.svg';
-import logo3 from '../assets/cards/White-Sneakers.svg';
+import logo2 from '../assets/cards/produc-image-4.png';
+import logo3 from '../assets/cards/produc-image-1.png';
+import logo4 from '../assets/cards/product-thumb-5.png';
 import ornament from '../assets/ornament.svg';
 import ornamentComplet from '../assets/ornamentComplet.svg';
 
@@ -31,7 +32,7 @@ const Logo = () => {
 
   return (
     <article
-      className="flex flex-col justify-around items-center pt-[80px] bg-light-gray-3 lg:flex-row-reverse lg:px-20 lg:pt-0"
+      className="flex flex-col justify-around items-center p-5 pt-[80px] bg-light-gray-3 lg:flex-row-reverse lg:px-20 lg:pt-0"
     >
       {/* Carrossel de Imagens */}
       <section className="self-center ">
@@ -43,7 +44,10 @@ const Logo = () => {
             <img src={logo2} alt="Imagem de tênis exemplo 2" className="h-[300px] md:h-[400px] lg:h-[600px] w-auto object-cover" />
           </div>
           <div>
-            <img src={logo3} alt="Imagem de tênis exemplo 3" className="h-[300px] md:h-[400px] lg:h-[600px] w-auto object-cover" />
+            <img src={logo3} alt="Imagem de tênis exemplo 2" className="h-[300px] md:h-[400px] lg:h-[600px] w-auto object-cover" />
+          </div>
+          <div>
+            <img src={logo4} alt="Imagem de tênis exemplo 2" className="h-[300px] md:h-[400px] lg:h-[600px] w-auto object-cover" />
           </div>
         </Slider>
 
@@ -53,7 +57,7 @@ const Logo = () => {
       </section>
 
       {/* Informações e Botão */}
-      <section className="flex flex-col gap-5 text-center p-5 lg:text-start lg:p-0 sm:w-[500px] lg:w-[400px]">
+      <section className="flex flex-col gap-5 text-center lg:text-start sm:w-[500px] lg:w-[400px]">
         <div>
           <p className="text-sm font-bold text-primary mb-5 lg:text-base lg:text-warning">Melhores ofertas personalizadas</p>
           <h1 className="text-4xl font-bold text-dark-gray mb-5 lg:text-5xl">Queima de estoque Nike 🔥</h1>

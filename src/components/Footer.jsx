@@ -8,7 +8,7 @@ import twitter from '../assets/twitter.svg';
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col gap-5 bg-dark-gray text-white p-5 pt-10 lg:px-20 ">
+    <footer className="flex flex-col gap-5 bg-dark-gray text-white mt-5 p-5 pt-10 lg:mt-0 lg:px-20 ">
       <article className="flex flex-col gap-7 md:flex-row md:justify-between lg:gap-20">
         {/* Logo e Descrição */}
         <section className="flex flex-col gap-7 md:w-1/3">
@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
 
           {/* Redes Sociais */}
-          <div className="flex gap-5 lg:gap-10">
+          <div className="flex gap-7 lg:gap-10">
             <img src={facebook} alt="Facebook" />
             <img src={instagram} alt="Instagram" />
             <img src={twitter} alt="Twitter" />
@@ -28,7 +28,7 @@ const Footer = () => {
         </section>
 
         {/* Links de Informação */}
-        <section className="flex flex-row gap-10 md:justify-center md:w-1/3">
+        <section className="flex flex-row gap-16 md:justify-center md:w-1/3">
           <div className="flex flex-col gap-2">
             <h3 className="text-base font-semibold">Informação</h3>
             <p className="text-sm">Sobre Drip Store</p>
@@ -62,7 +62,6 @@ const Footer = () => {
         <span className="w-full  border-t border-light-gray"></span>
         <p className="text-xs text-center text-white pt-5">@ 2022 Digital College</p>
       </article>
-
     </footer>
   );
 };

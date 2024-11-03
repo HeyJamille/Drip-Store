@@ -1,12 +1,11 @@
 // components
-import HomePage from './pages/HomePage'
+import Paths from './routes/paths'
 
 function App() {
   return (
     <>
-      <HomePage />
+      <Paths />
     </>
-    
   )
 }
 

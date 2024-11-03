@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // assets
 import logo from '../assets/logo-header.svg';
@@ -10,6 +11,7 @@ import closeIcon from '../assets/close.svg'; // Importa o ícone de fechar
 // components
 import InputText from './UI/InputText';
 import Button from './UI/Button';
+
 
 const Header = () => {
   // Button options
@@ -113,28 +115,47 @@ const Header = () => {
 
       {/* Menu visível apenas em telas pequenas quando clicado */}
       {isMenuOpen && (
-        <div className="fixed left-0 top-[70px] flex flex-col justify-between h-[calc(100vh-70px)] w-[250px] bg-white z-50">
-          <div className="p-4">
-            <p className="pb-5 font-bold">Páginas</p>
-            <p className="py-1">Home</p>
-            <p className="py-1">Produtos</p>
-            <p className="py-1">Categorias</p>
-            <p className="py-1">Meus pedidos</p>
-          </div>
+        <nav className="fixed left-0 top-[70px] flex flex-col justify-between h-[calc(100vh-70px)] w-[300px] bg-white z-50">
+          <ul className="p-4">
+            <li className="pb-5 font-bold">Páginas</li>
 
+            <li className="py-2 text-dark-gray-2"> 
+              <Link to={"/"}>Home</Link> 
+            </li>
+            <li className="py-2 text-dark-gray-2">
+              <Link to={"/produtos"}>Produtos</Link> 
+            </li>
+            <li className="py-2 text-dark-gray-2">
+              <Link to={"/categorias"}>Categorias</Link>
+            </li>
+            <li className="py-2 text-dark-gray-2">
+              <Link to={"/meus_pedidos"}>Meus pedidos</Link>
+            </li>
+          </ul>
+
+          {/* Linha Divisória e Botões */}
           <div className="flex flex-col text-center gap-2 p-4">
+            <span className="w-full border-t mb-5 border-light-gray"></span>
             <Button label={options[0]} />
             <p className="underline">Cadastre-se</p>
           </div>
-        </div>
+        </nav>
       )}
 
       {/* Menu visível apenas em telas grandes */}
       <div className="hidden lg:flex lg:flex-row lg:gap-5 lg:px-[5%] lg:pb-[10px] lg:pt-[90px]">
-        <p className="py-1">Home</p>
-        <p className="py-1">Produtos</p>
-        <p className="py-1">Categorias</p>
-        <p className="py-1">Meus pedidos</p>
+        <p className="py-1 text-dark-gray-2">
+          <Link to={"/"}>Home</Link>
+        </p>
+        <p className="py-1 text-dark-gray-2">
+          <Link to={"/produtos"}>Produtos</Link> 
+        </p>
+        <p className="py-1 text-dark-gray-2">
+          <Link to={"/categorias"}>Categorias</Link>
+        </p>
+        <p className="py-1 text-dark-gray-2">
+          <Link to={"/meus_pedidos"}>Meus pedidos</Link>
+        </p>
       </div>
     </>
   );
